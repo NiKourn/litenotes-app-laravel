@@ -1,2 +1,2 @@
 # litenotes-app
- Build a laravel app
+ Build LiteNotes app
