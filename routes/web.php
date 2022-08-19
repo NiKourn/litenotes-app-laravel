@@ -18,18 +18,23 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//show php version
+Route::get('/php', function () {
+    return view('php');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/notes', );
-
+//Route::get('/notes', );
+//
 //{note} will be the unique id
-Route::get('/notes/{note}',);
-
-Route::get('/notes/create',);
-
-Route::post('/notes',);
+//Route::get('/notes/{note}',);
+//
+//Route::get('/notes/create',);
+//
+//Route::post('/notes',);
 
 Route::resource('notes', \App\Http\Controllers\NoteController::class)->middleware('auth');
 
