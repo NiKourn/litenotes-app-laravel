@@ -24,8 +24,9 @@ Route::get('/php', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+    return view('dashboard');})
+     ->middleware(['auth'])
+     ->name('dashboard');
 
 //Route::get('/notes', );
 //
